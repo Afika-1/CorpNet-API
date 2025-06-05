@@ -156,7 +156,7 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
-CORS_ALLOW_CREDENTIALS = True  
+CORS_ALLOW_CREDENTIALS = False
 
 # REST Framework Settings
 REST_FRAMEWORK = {
