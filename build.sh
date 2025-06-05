@@ -1,10 +1,8 @@
-# Backend/build.sh
-#/usr/bin/env bash
+#!/usr/bin/env bash
 # Exit immediately if a command exits with a non-zero status.
 set -eo pipefail
 
-# Activate your virtual environment
-# source .venv/bin/activate
+# DO NOT put 'source .venv/bin/activate' here. Render handles environment.
 
 # Navigate into your Django project directory
 cd social_media_api/
@@ -15,5 +13,5 @@ python manage.py collectstatic --noinput
 # Run database migrations
 python manage.py migrate
 
-# Go back to the root directory for the start command
+# Go back to the root directory for the start command (optional, but good practice)
 cd ..
