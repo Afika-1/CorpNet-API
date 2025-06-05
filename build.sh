@@ -4,7 +4,7 @@
 set -eo pipefail
 
 # Activate your virtual environment
-source .venv/bin/activate
+# source .venv/bin/activate
 
 # Navigate into your Django project directory
 cd social_media_api/
