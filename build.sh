@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
-# Exit immediately if a command exits with a non-zero status.
 set -eo pipefail
 
-# DO NOT put 'source .venv/bin/activate' here. Render handles environment.
+# Explicitly install dependencies as a test
+pip install -r requirements.txt
 
 # Navigate into your Django project directory
 cd social_media_api/
 
-# Collect static files (even for API, needed for Admin/DRF browsable API)
+# Collect static files
 python manage.py collectstatic --noinput
 
 # Run database migrations
 python manage.py migrate
 
-# Go back to the root directory for the start command (optional, but good practice)
+# Go back to the root directory
 cd ..
