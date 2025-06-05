@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+# Backend/build.sh
+#/usr/bin/env bash
 # Exit immediately if a command exits with a non-zero status.
 set -eo pipefail
 
