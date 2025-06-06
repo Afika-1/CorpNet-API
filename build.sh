@@ -29,7 +29,7 @@ python3 manage.py migrate --noinput
 # If you are serving static files via a CDN or a separate service, you might not need this.
 # Render automatically sets DJANGO_SETTINGS_MODULE when you specify the WSGI entry point
 # so it knows where to find settings.
-# echo "Collecting static files..."
-# python3 manage.py collectstatic --noinput --clear
+echo "Collecting static files..."
+python3 manage.py collectstatic --noinput --clear # <--- ADD THIS LINE HERE, UNCOMMENTED
 
 echo "Build process complete!"
