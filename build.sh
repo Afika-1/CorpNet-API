@@ -14,4 +14,4 @@ python manage.py collectstatic --noinput
 python manage.py migrate
 
 # Go back to the root directory for the start command (THIS IS IMPORTANT FOR THE NEXT STEP'S GUNICORN COMMAND)
-cd ..
+# cd ..
