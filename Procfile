@@ -1,1 +1,1 @@
-web: PYTHONPATH=. gunicorn social_media_api.social_media_api.wsgi:application --bind 0.0.0.0:$PORT
+web: gunicorn social_media_api.wsgi:application --bind 0.0.0.0:$PORT
