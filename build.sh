@@ -2,8 +2,6 @@
 set -eo pipefail
 
 pip install --upgrade pip
-pip install -r requirements.txt
-cd social_media_api/social_media_api/
+pip install -r /home/que/Backend/requirements.txt
 python manage.py collectstatic --noinput
 python manage.py migrate
-cd ../..  # Return to /home/que/Backend for Gunicorn

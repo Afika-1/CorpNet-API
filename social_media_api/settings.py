@@ -46,8 +46,8 @@ INSTALLED_APPS = [
     'corsheaders',
     "drf_yasg",
     #local apps
-    "accounts",
-    "posts",
+    "social_media_api.accounts", # <--- CHANGE THIS
+    "social_media_api.posts",
     
 ]
 
