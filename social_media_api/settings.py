@@ -170,7 +170,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
 }
 
-AUTH_USER_MODEL = 'social_media_api.accounts.User'
+AUTH_USER_MODEL = 'accounts.User'
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
