@@ -1,5 +1,5 @@
 from django.db import models
-from social_media_api.accounts.models import User
+from accounts.models import User
 
 class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
