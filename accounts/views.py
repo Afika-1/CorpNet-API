@@ -38,7 +38,7 @@ class BusinessRegistrationView(APIView):
     permission_classes = [AllowAny]
 
     @swagger_auto_schema(
-        request_body=BusinessRegistrationSerializer, # <--- Tell Swagger to use this serializer for the request body
+        request_body=BusinessRegistrationSerializer, 
         responses={
             201: 'User created successfully',
             400: 'Bad request (validation errors)'
