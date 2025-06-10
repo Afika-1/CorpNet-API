@@ -67,3 +67,4 @@ class BusinessProfile(models.Model):
     def __str__(self):
         return self.business_name
 
+#Done
